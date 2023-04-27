@@ -1,0 +1,82 @@
+
+*** ChampSim Multicore Out-of-Order Simulator ***
+
+Warmup Instructions: 30000000
+Simulation Instructions: 30000000
+Number of CPUs: 1
+LLC sets: 2048
+LLC ways: 16
+Off-chip DRAM Size: 4096 MB Channels: 1 Width: 64-bit Data Rate: 3200 MT/s
+
+CPU 0 runs /home/nithya/Downloads/Project230/gap/bfs-8.trace.gz
+CPU 0 Bimodal branch predictor
+CPU 0 L2C IP-based stride prefetcher
+Heartbeat CPU 0 instructions: 10000003 cycles: 2954080 heartbeat IPC: 3.38515 cumulative IPC: 3.38515 (Simulation time: 0 hr 0 min 7 sec) 
+Heartbeat CPU 0 instructions: 20000001 cycles: 6392567 heartbeat IPC: 2.90826 cumulative IPC: 3.12863 (Simulation time: 0 hr 0 min 24 sec) 
+Heartbeat CPU 0 instructions: 30000003 cycles: 9916375 heartbeat IPC: 2.83784 cumulative IPC: 3.0253 (Simulation time: 0 hr 0 min 42 sec) 
+
+Warmup complete CPU 0 instructions: 30000003 cycles: 9916375 (Simulation time: 0 hr 0 min 42 sec) 
+
+Heartbeat CPU 0 instructions: 40000000 cycles: 45504512 heartbeat IPC: 0.280992 cumulative IPC: 0.280992 (Simulation time: 0 hr 0 min 57 sec) 
+Heartbeat CPU 0 instructions: 50000001 cycles: 72695081 heartbeat IPC: 0.367775 cumulative IPC: 0.318579 (Simulation time: 0 hr 1 min 8 sec) 
+Heartbeat CPU 0 instructions: 60000000 cycles: 90495127 heartbeat IPC: 0.561796 cumulative IPC: 0.372307 (Simulation time: 0 hr 1 min 19 sec) 
+Finished CPU 0 instructions: 30000002 cycles: 80578754 cumulative IPC: 0.372307 (Simulation time: 0 hr 1 min 19 sec) 
+
+ChampSim completed all CPUs
+
+Region of Interest Statistics
+
+CPU 0 cumulative IPC: 0.372307 instructions: 30000002 cycles: 80578754
+L1D TOTAL     ACCESS:    5878253  HIT:    5234743  MISS:     643510
+L1D LOAD      ACCESS:    5427073  HIT:    4790253  MISS:     636820
+L1D RFO       ACCESS:     451180  HIT:     444490  MISS:       6690
+L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1D PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L1D AVERAGE MISS LATENCY: 96.9745 cycles
+L1I TOTAL     ACCESS:    6122955  HIT:    6122947  MISS:          8
+L1I LOAD      ACCESS:    6122955  HIT:    6122947  MISS:          8
+L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L1I AVERAGE MISS LATENCY: 204.375 cycles
+L2C TOTAL     ACCESS:    1234322  HIT:     677142  MISS:     557180
+L2C LOAD      ACCESS:     636828  HIT:     332506  MISS:     304322
+L2C RFO       ACCESS:       6690  HIT:       2900  MISS:       3790
+L2C PREFETCH  ACCESS:     534002  HIT:     284942  MISS:     249060
+L2C WRITEBACK ACCESS:      56802  HIT:      56794  MISS:          8
+L2C PREFETCH  REQUESTED:     560673  ISSUED:     560673  USEFUL:     214397  USELESS:      35532
+L2C AVERAGE MISS LATENCY: 163.854 cycles
+LLC TOTAL     ACCESS:     613224  HIT:      89462  MISS:     523762
+LLC LOAD      ACCESS:     298340  HIT:      32232  MISS:     266108
+LLC RFO       ACCESS:       3790  HIT:        299  MISS:       3491
+LLC PREFETCH  ACCESS:     255042  HIT:       1625  MISS:     253417
+LLC WRITEBACK ACCESS:      56052  HIT:      55306  MISS:        746
+LLC PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:        573  USELESS:     263448
+LLC AVERAGE MISS LATENCY: 139.253 cycles
+Major fault: 0 Minor fault: 26900
+CPU 0 L2C PC-based stride prefetcher final stats
+
+DRAM Statistics
+ CHANNEL 0
+ RQ ROW_BUFFER_HIT:     209153  ROW_BUFFER_MISS:     313863
+ DBUS_CONGESTED:      91599
+ WQ ROW_BUFFER_HIT:      19125  ROW_BUFFER_MISS:      39604  FULL:          0
+
+ AVG_CONGESTED_CYCLE: 6
+
+CPU 0 Branch Prediction Accuracy: 87.0831% MPKI: 26.8156 Average ROB Occupancy at Mispredict: 7.88759
+
+Branch types
+NOT_BRANCH: 23771617 79.2387%
+BRANCH_DIRECT_JUMP: 38254 0.127513%
+BRANCH_INDIRECT: 0 0%
+BRANCH_CONDITIONAL: 6189694 20.6323%
+BRANCH_DIRECT_CALL: 48 0.00016%
+BRANCH_INDIRECT_CALL: 0 0%
+BRANCH_RETURN: 48 0.00016%
+BRANCH_OTHER: 0 0%
+
+
+gzip: stdout: Broken pipe
