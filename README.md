@@ -1,5 +1,5 @@
 # PROJECT_CS230
-210050095_210050140_210050152
+210050095-210050140-210050152
 ## ChampSim
 ChampSim is a trace-based simulator for a microarchitecture study. You can sign up to the public mailing list by sending an empty mail to champsim+subscribe@googlegroups.com. A set of traces used for the 2nd Cache Replacement Championship (CRC-2) can be found from this link. (http://bit.ly/2t2nkUj)
 
@@ -19,6 +19,13 @@ $ ./build_champsim.sh ${BRANCH} ${L1D_PREFETCHER} ${L2C_PREFETCHER} ${LLC_REPLAC
 ```
 
 ## Run simulation
+
+"BEFORE RUNNING": 
+PLEASE NOTE: "inclusive.cc, exclusive.cc, non-inclusive.cc contain the working code for the corresponding inclusivity options"
+ these files need to be placed inside src folder being named as "cache.cc"
+ The traces need to be placed in the folder "gap".
+ Our plots are in folder "results_30M". You can run replacement.py and prefetcher.py to get these plots.
+ 
 Copy `scripts/run_champsim.sh` to the ChampSim root directory and change TRACE_DIR in run_champsim.sh
 
 - Single-core simulation: Run simulation with run_champsim.sh script.
