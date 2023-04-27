@@ -1,12 +1,5 @@
 # PROJECT_CS230
 210050095-210050140-210050152
-## ChampSim
-ChampSim is a trace-based simulator for a microarchitecture study. You can sign up to the public mailing list by sending an empty mail to champsim+subscribe@googlegroups.com. A set of traces used for the 2nd Cache Replacement Championship (CRC-2) can be found from this link. (http://bit.ly/2t2nkUj)
-
-### Clone ChampSim repository
-```
-git clone https://github.com/Sacusa/ChampSim-CASS.git
-```
 
 ## Compile
 ChampSim takes six parameters: Branch predictor, L1D prefetcher, L2C prefetcher, LLC replacement policy, the number of cores, and an optional paramter to remove caches. For example, ./build_champsim.sh bimodal no no lru 1 builds a single-core processor with bimodal branch predictor, no L1/L2 data prefetchers, and the baseline LRU replacement policy for the LLC. If you add another option --no-cache in the end, ChampSim will be built without any cache memory.
