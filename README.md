@@ -19,7 +19,7 @@ $ ./build_champsim.sh ${BRANCH} ${L1D_PREFETCHER} ${L2C_PREFETCHER} ${LLC_REPLAC
 ```
 
 ## Run simulation
-
+```
 "BEFORE RUNNING": 
 - PLEASE NOTE: "inclusive.cc, exclusive.cc, non-inclusive.cc contain the working code for the corresponding inclusivity options"
  - these files need to be placed inside src folder being named as "cache.cc"
@@ -27,7 +27,7 @@ $ ./build_champsim.sh ${BRANCH} ${L1D_PREFETCHER} ${L2C_PREFETCHER} ${LLC_REPLAC
  - Our plots are in folder "results_30M". You can run replacement.py and prefetcher.py to get these plots.
  - The traces need to have extension ".gz"
  - Run .py files as python3 replacement.py trace(without .gz extension) N_WARM N_SIM  
- 
+```
 Copy `scripts/run_champsim.sh` to the ChampSim root directory and change TRACE_DIR in run_champsim.sh
 
 - Single-core simulation: Run simulation with run_champsim.sh script.
